@@ -15,6 +15,7 @@ return 返回时：只能返回一个值，不能返回多个值；
         return array;
     }
 
+
     public static void main(String[] args) {
         int a = 50, b = 60, c = 70;
         int[] result = calculate(a, b ,c);

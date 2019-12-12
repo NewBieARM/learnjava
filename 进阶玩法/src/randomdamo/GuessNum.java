@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class GuessNum {
     public static void main(String[] args) {
         Random random = new Random();
-        int num = random.nextInt(100);
+        int num = random.nextInt(100) + 1;
         int count = 1;
         while (true) {
             System.out.print("请输入数字: ");

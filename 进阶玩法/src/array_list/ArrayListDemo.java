@@ -21,6 +21,10 @@ public class ArrayListDemo {
         // 创建了一个 ArrayList 集合，里面只能装 String
         // 备注：从 JDK1.7+ 开始，右边的<>括号能可以省略
         ArrayList<String> list = new ArrayList<>();
+        list.add("哇哈哈");
+        list.add("dilraba");
+        list.add("arman");
+        list.add("100"); // 必须是 String
         System.out.println(list);
     }
 }

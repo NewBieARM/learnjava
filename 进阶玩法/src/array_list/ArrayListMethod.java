@@ -15,9 +15,9 @@ public class ArrayListMethod {
         ArrayList<String> list = new ArrayList<>();
 
         // 添加
-        boolean resultaAdd =list.add("迪丽热巴");
+        boolean resultAdd =list.add("迪丽热巴");
         list.add("李小璐");
-        System.out.println("添加操作" + resultaAdd); // 添加的动作是否成功；返回值是一个true
+        System.out.println("添加操作" + resultAdd); // 添加的动作是否成功；返回值是一个true
 
         //获取
         String resultGet = list.get(0);

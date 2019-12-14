@@ -20,5 +20,8 @@ public class MathDemo {
 
         //四舍五入
         System.out.println(Math.round(13.45));  //13
+
+        // PI
+        System.out.println(Math.PI);  //  3.141592653589793
     }
 }

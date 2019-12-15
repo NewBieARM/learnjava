@@ -19,13 +19,11 @@ public class Member extends User {
         //根据索引，从集合当中删除，并且得到已被删除的红包，给我自己
         int delta =  list.remove(index);
 
-        // 当前成员字节本来有多少钱， 在加给自己
+        // 当前成员自己本来有多少钱， 在加给自己
         int money = super.getMoney();
 
         // 加法，并且重新设置回去
         super.setMoney(money + delta);
-
-
 
     }
 }

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 // 群主的类
 public class Manager extends User{
     public Manager(){
-
     }
 
     public Manager(String name, int money) {

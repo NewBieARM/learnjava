@@ -5,6 +5,5 @@ public class InterfaceRun {
 
         MyInterfaceAbsImpl impl = new MyInterfaceAbsImpl();
         impl.methodAbs();
-
     }
 }

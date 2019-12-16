@@ -14,12 +14,12 @@ public interface MyInterfaceAbstract {
     public abstract void methodAbs();
 
     // 也是抽象方法
-    abstract void methodAbs1();
+    //abstract void methodAbs1();
 
     // 也是抽象方法
-    public void methodAbs2();
+    //public void methodAbs2();
 
     // 也是一个抽象方法
-    void methodAbs3();
+    //void methodAbs3();
 
 }

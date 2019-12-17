@@ -1,7 +1,7 @@
 package multi;
 
 public class Fu {
-    void method(){
+    public void method(){
         System.out.println("父类方法");
     }
     public void methodFu(){

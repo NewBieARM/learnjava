@@ -16,7 +16,11 @@ public class MultiDemo {
         //左侧父类引用，指向了右侧子类的对象
         Fu obj = new Zi();
 
-        obj.method();
-        obj.methodFu();
+        obj.method();  // 父子都有，优先子
+        obj.methodFu();  // 子类没有，向上找到父类
+
+        // 编译看左边，左边是 Fu， Fu 当中没有methodZi() 方法，所以编译报错
+
+//        obj.methodZi();  //错误写法
     }
 }

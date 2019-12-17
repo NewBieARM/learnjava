@@ -1,7 +1,11 @@
 package multi;
 
 public class Zi extends Fu {
-    void method(){
+    public void method() {
         System.out.println("子类方法");
+    }
+
+    public void methodFu(){
+        System.out.println("子类特有方法");
     }
 }

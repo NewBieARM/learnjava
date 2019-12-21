@@ -26,9 +26,21 @@ public class Main {
 
             }
         };
-
         obj.method();
         obj.method2();
+
+        new MyInterface(){
+
+            @Override
+            public void method() {
+
+            }
+
+            @Override
+            public void method2() {
+
+            }
+        }.method();  // 两个方法只能选一个用 ..
 
     }
 }

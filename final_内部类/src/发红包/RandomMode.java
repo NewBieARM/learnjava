@@ -23,7 +23,6 @@ public class RandomMode implements OpenMode {
         int leftMoney = totalMoney;
         int leftCount = totalCount;
 
-
         //随机发前 n-1 个，最后一个不需要随机
         for (int i = 0; i < totalCount - 1; i++) {
             // 按公式生成随即金额

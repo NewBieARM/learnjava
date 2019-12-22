@@ -10,10 +10,11 @@ import java.util.Date;
     格式化（也就是日期 -> 文本）、解析（文本 -> 日期）
  成员方法：
     String format(Date date)  按照指定的模式，把 Date 日期，格式化为符合模式的字符串
-    Date parse()  把符合模式的字符串，解析为 Date 日期
- DateFormat 类说一个抽象类，无法直接创建对象使用，可以使用 DateFormat 类的子类
 
- java.text.SimpleDateFormat  extends DateFormat
+    Date parse()  把符合模式的字符串，解析为 Date 日期
+
+    DateFormat 类说一个抽象类，无法直接创建对象使用，可以使用 DateFormat 类的子类 SimpleDateFormat
+ java.text.SimpleDateFormat
  构造方法：
     SimpleDateFormat(String pattern)
         用给定的模式和默认语言环境的日期格式符号构造 SimpleDateFormat
@@ -65,7 +66,7 @@ public class DateFormatDemo {
                 调用另一抛出了异常的方法，就必须得处理这个异常，要么 throws 继续抛出这个异常，要么 try catch 自己处理
          */
         SimpleDateFormat sdf = new SimpleDateFormat("YYYY年MM月dd日  HH点mm分ss秒");
-        Date resualt = sdf.parse("2019年12月22日  21点27分01秒");  // 这个里的模式得和 上面的一模一样，不然会抛出异常
-        System.out.println(resualt);  //  Sun Dec 30 21:27:01 GMT+08:00 2018
+        Date result = sdf.parse("2019年12月22日  21点27分01秒");  // 这个里的模式得和 上面的一模一样，不然会抛出异常
+        System.out.println(result);  //  Sun Dec 30 21:27:01 GMT+08:00 2018
     }
 }

@@ -3,7 +3,7 @@ Set接口的特点：
     1.不允许存储重复的元素
     2.没有索引，没有带索引的方法，也不能使用普通的 for 循环遍历
 
-java.util.HashSetDemo 集合 implements Set 接口
+java.util.SetDemo.HashSetDemo 集合 implements Set 接口
 HashSet特点：
     1.不允许存储重复的元素
     2.没有索引，没有带索引的方法，也不能使用普通for循环遍历

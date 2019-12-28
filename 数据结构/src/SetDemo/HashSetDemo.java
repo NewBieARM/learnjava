@@ -1,3 +1,5 @@
+package SetDemo;
+
 import SetDemo.Person;
 
 import java.util.HashSet;

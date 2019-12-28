@@ -6,7 +6,7 @@ import java.util.List;
 /*
     java.util.List 接口 extends Collections接口
     List接口的特点:
-        1.有序的集合，存储元素合取元素的顺序市一致的
+        1.有序的集合，存储元素合取元素的顺序是一致的
         2.有索引，包含了一些带索引的方法
         3.允许存储重复元素
 

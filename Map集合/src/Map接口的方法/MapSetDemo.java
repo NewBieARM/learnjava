@@ -14,8 +14,6 @@ import java.util.Set;
         2.遍历set集合,获取Map集合中的每一个key
         3.通过Map集合中的方法get(key),通过key找到value
 
-    第二种方法：
-        public Set<Map.Entry<K,V>> entrySet(): 获取到Map集合中所有的键值对对象的集合(Set集合)。
  */
 public class MapSetDemo {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package Map接口的方法;
+
 import java.util.HashMap;
 import java.util.Map;
 

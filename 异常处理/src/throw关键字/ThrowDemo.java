@@ -34,8 +34,7 @@ public class ThrowDemo {
             throw new IndexOutOfBoundsException("超出范围..");
         }
 
-        int ele = arr[index];
-        return ele;
+        return arr[index];
     }
 
 }

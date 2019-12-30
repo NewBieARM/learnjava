@@ -13,7 +13,7 @@ package 自定义异常类;
             继承Exception:那么自定义的异常类就是一个编译器一场,如果方法内部出现了编译器异常,就必须处理个异常.要么throws,要么try..catch
             继承RuntimeException:那么自定义的异常类就是一个运行期异常,无需处理,交给JVM处理(中断处理)
  */
-public class RegisterException extends Exception{
+public class RegisterException extends /*Exception*/ RuntimeException{
     // 添加一个空参数构造方法
     public RegisterException(){
         super();

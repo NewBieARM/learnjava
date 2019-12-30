@@ -1,4 +1,7 @@
 package throw关键字;
+
+import java.util.Objects;
+
 /*
     throw 关键字
         作用:
@@ -30,6 +33,8 @@ public class ThrowDemo {
         if (arr == null) {
             throw new NullPointerException("传递的数组的值是null");
         }
+//        Objects.requireNonNull(arr, "没有元素");  // 上面的判断语句相当于这个
+
         if (index < 0 || index > arr.length - 1) {
             throw new IndexOutOfBoundsException("超出范围..");
         }

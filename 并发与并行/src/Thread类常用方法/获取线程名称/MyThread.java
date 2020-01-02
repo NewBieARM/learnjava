@@ -1,4 +1,4 @@
-package Thread类常用方法;
+package Thread类常用方法.获取线程名称;
 /*
     获取线程的名称:
         1.使用Thread类中的方法getName()

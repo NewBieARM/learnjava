@@ -1,4 +1,4 @@
-package Thread类常用方法;
+package Thread类常用方法.获取线程名称;
 /*
     线程名称:
         主线程: main

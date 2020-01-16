@@ -1,9 +1,8 @@
-package SynchronizedMethod;
+package 线程安全.SynchronizedDemo;
 
 public class TicketDemo {
     public static void main(String[] args) {
         RunnableImpl run = new RunnableImpl();
-        System.out.println("run ->" +run);
         Thread t0 = new Thread(run, "T0");
         Thread t1 = new Thread(run, "T1");
         Thread t2 = new Thread(run, "T2");

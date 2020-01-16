@@ -1,4 +1,4 @@
-package 创建多线程第二种方法;
+package 创建多线程.创建多线程第二种方法;
 /*
     创建多线程程序的第二种方式: 实现Runnable接口
     java,lang.Runnable

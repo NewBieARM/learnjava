@@ -1,4 +1,4 @@
-package 创建多线程程序;
+package 创建多线程.创建多线程程序;
 /*
     创建多线程程序的第一种方式: 创建Thread类的子类
     java.lang.Thread类: 是描述线程的类,我们想要实现多线程程序,就必须继承Thread类

@@ -1,4 +1,4 @@
-package ThreadSafe;
+package 线程安全.ThreadSafe;
 /*
     实现买票案例:
  */

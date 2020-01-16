@@ -1,4 +1,4 @@
-package SynchronizedDemo;
+package 线程安全.SynchronizedDemo;
 /*
     卖票案例出现了线程安全问题
     卖出了不存在的票和重复的票

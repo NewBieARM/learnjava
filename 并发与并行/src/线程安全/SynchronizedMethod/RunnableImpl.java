@@ -1,4 +1,4 @@
-package SynchronizedMethod;
+package 线程安全.SynchronizedMethod;
 
 /*
     卖票案例出现了线程安全问题

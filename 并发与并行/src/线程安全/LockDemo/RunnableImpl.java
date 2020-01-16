@@ -1,4 +1,4 @@
-package LockDemo;
+package 线程安全.LockDemo;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

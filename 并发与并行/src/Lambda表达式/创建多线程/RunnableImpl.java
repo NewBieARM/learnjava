@@ -1,4 +1,4 @@
-package Lambda表达式;
+package Lambda表达式.创建多线程;
 
 public class RunnableImpl implements Runnable {
     @Override

@@ -1,4 +1,4 @@
-package Lambda表达式;
+package Lambda表达式.创建多线程;
 
 public class RunnableDemo {
     public static void main(String[] args) {

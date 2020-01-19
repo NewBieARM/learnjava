@@ -19,7 +19,7 @@ import java.io.IOException;
  */
 public class JDK9Demo {
     public static void main(String[] args) throws IOException {
-        FileWriter fw = new FileWriter(new File("G:\\my_share\\code\\HelloWorld.txt"))
+        FileWriter fw = new FileWriter(new File("G:\\my_share\\code\\HelloWorld.txt"));
         try(fw){
             for (int i=0; i<10; i ++) {
                 fw.write("HelloWorld" + i + "\r\n");

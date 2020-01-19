@@ -1,8 +1,6 @@
 package IO流概述.PropertiesDemo;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Properties;
 import java.util.Set;
 
@@ -19,7 +17,37 @@ import java.util.Set;
 public class PropertiesDemo01 {
     public static void main(String[] args) throws IOException  {
 //        show01();
-        show02();
+//        show02();
+        show03();
+    }
+
+    private static void show03() throws IOException {
+        /*
+         可以使用Properties集合中的方法load,把硬盘中保存的文件(键值对),读取到集合中使用
+         void load(InputStream inStream)
+         void load(Reader reader)
+         参数:
+            InputStream inStream: 字节输入流,不能读取含有中文的键值对
+            Reader reader: 字符输入流,能读取含有中文的键值对
+         步骤:
+            1.创建Properties集合对象
+            2.使用Properties集合中的 load 读取保存键值对的文件
+            3.遍历Properties集合
+
+         注意:
+            1.存储键值对的文件中,键于值默认的连接符号可以使用=.空格(其他符号)
+            2.存储键值对的文件中,可以用#进行注释,备注是的键值对不会被读取
+            3.存储键值对的文件中,键于值默认都是字符串
+         */
+
+        // 1.
+        Properties prop = new Properties();
+        prop.load(new FileReader("G:\\my_share\\code\\Properties.txt"));
+        Set<String> set = prop.stringPropertyNames();
+        for (String key : set) {
+            String value = prop.getProperty(key);
+            System.out.println(key + "-" + value);
+        }
     }
 
     private static void show02() throws IOException {

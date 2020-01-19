@@ -1,5 +1,8 @@
 package IO流概述.PropertiesDemo;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Properties;
 import java.util.Set;
 
@@ -14,8 +17,42 @@ import java.util.Set;
         Properties集合是一个双列集合,key和value默认都是字符串
  */
 public class PropertiesDemo01 {
-    public static void main(String[] args) {
-        show01();
+    public static void main(String[] args) throws IOException  {
+//        show01();
+        show02();
+    }
+
+    private static void show02() throws IOException {
+        /*
+            可以使用Properties集合中的方法store,把集合中的临时数据 持久化写入到硬盘中
+            void store(OutputStream out, String comments)
+            store(Writer writer, String comments)
+            参数:
+                OutputStream out: 字节输出流,不能写入中文
+                Writer writer: 可以写中文
+                String comments:注释,用来解释说明保存的文件是做什么的
+                                不能使用中文,会产生乱码,默认事Unicode编码
+                                一般使用""空字符串
+            步骤:
+                1.创建Properties集合对象,添加数据
+                2.创建字节输出流/字符输出流,构造方法绑定要输出的目的地
+                3.使用Properties集合中的store,把数据持久化
+                4.释放资源
+         */
+        // 1.
+        Properties prop = new Properties();
+        prop.setProperty("赵丽颖", "168");
+        prop.setProperty("迪丽热巴", "165");
+        prop.setProperty("古力娜扎", "160");
+
+        // 2.
+        FileWriter fw = new FileWriter(new File("G:\\my_share\\code\\Properties.txt"));
+
+        // 3.
+        prop.store(fw, "save date");
+        // 4.
+        fw.close();
+
     }
 
     private static void show01() {

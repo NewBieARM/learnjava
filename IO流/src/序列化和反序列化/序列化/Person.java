@@ -20,8 +20,10 @@ import java.io.Serializable;
 
  */
 public class Person implements Serializable {
+    static final long serialVersionUID = 42L;
     private String name;
-    private int age;
+//    private transient int age;
+    public int age;
 
     public Person() {
     }
